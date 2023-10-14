@@ -7,14 +7,13 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 #container {
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
 }
 
 #container .nav-bar {
@@ -37,15 +36,97 @@ body {
     margin: 10px;
 }
 
-.nav-bar ul li {
+.nav-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7.5px 0;
     margin: 0 40px;
 }
 
-.nav-bar ul li:hover{
+.nav-bar ul li a:hover{
+    border-bottom: 2px solid rgb(213, 213, 213);
     cursor: pointer;
     color: rgb(213, 213, 213);
 }
 
 .nav-bar #nav-icon i{
     margin: 10px;
+}
+
+.main-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6% 8%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1{
+    font-size: 3.2vw;
+    margin: 8px 0;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.info h4{
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+}
+
+.info p{
+    color: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    letter-spacing: 1px;
+}
+
+button{
+    height: 8vh;
+    width: 15vw;
+    font-weight: 700;
+    margin-top: 40px;
+    border-radius: 3px;
+    outline: none;
+    border: 0.5px solid;
+    transition: .6s;
+    font-size: 1.1vw;
+    letter-spacing: 0.8px;
+    border-color: #fff;
+    background: #fff;
+    cursor: pointer;
+}
+
+.carousel-inner img{
+    margin: auto;
+    width: 25vw;
+    animation: anim 2s linear infinite alternate;
+}
+
+@keyframes anim {
+    0%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+#carouselExample{
+    width: 380px;
+}
+
+.carousel-control-prev{
+     top: 50px;
+    /* left: -50px; */
+}
+
+.carousel-control-next{
+    top: 50px;
 }
