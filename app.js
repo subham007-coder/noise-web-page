@@ -8,6 +8,7 @@ let flag = 0;
 
 pvrBtn.addEventListener("click", () => {
     flag += 1;
+    
     console.log("pvr", flag);
 
     if (flag == 6) {
