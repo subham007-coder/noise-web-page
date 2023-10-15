@@ -4,16 +4,18 @@ const pvrBtn = document.querySelector(".carousel-control-prev");
 
 const nextBtn = document.querySelector(".carousel-control-next");
 
+const darkPink = document.querySelector("#bg-darkPink")
+
 let flag = 0;
 
 pvrBtn.addEventListener("click", () => {
     flag += 1;
-    
+
     console.log("pvr", flag);
 
     if (flag == 6) {
         flag = 0;
-        container.style.backgroundColor = "#242424";
+        container.style.backgroundColor = "#242424"; // black
         console.log(flag);
     }
 
@@ -35,6 +37,7 @@ pvrBtn.addEventListener("click", () => {
     if (flag == 6 || flag == 0) {
         container.style.backgroundColor = "rgb(36, 36, 36)";
     }
+
 })
 
 let flagnext = 0;
@@ -66,6 +69,9 @@ nextBtn.addEventListener("click", () => {
     }
     if (flagnext == 6 || flagnext == 0) {
         container.style.backgroundColor = "rgb(36, 36, 36)";
-        console.log("subham");
     }
+
+
+
 })
+
