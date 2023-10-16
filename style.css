@@ -83,11 +83,27 @@ body {
     text-align: center;
 }
 
-#all-product ul li a img{
+#all-product ul a{
+    text-decoration: none;
+    line-height: 20px;
+    color: #000;
+}
+
+#all-product ul a li img{
     width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#all-product ul a:nth-child(4){
+    margin-bottom: 20px;
+}
+#all-product ul a:nth-child(5){
+    margin-bottom: 20px;
+}
+#all-product ul a:nth-child(7){
+    margin-bottom: 20px;
 }
 
 #all-product .line-left{
