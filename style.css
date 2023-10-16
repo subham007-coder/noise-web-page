@@ -13,19 +13,24 @@ body {
 #container {
     width: 100%;
     height: calc(100vh - 50px);
-    background-color: rgb(36, 36, 36);
+    background-color: rgba(205, 205, 205, 0.2);
 }
 
 #container .nav-bar {
+    position: fixed;
+    z-index: 1;
     height: 50px;
-    background-color: black;
+    width: 100%;
+    border-bottom: 0.1px solid gray;
+    /* background-color: black; */
+    background: transparent;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-#container .nav-bar h2{
+#container .nav-bar h2 {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Young Serif', serif;
@@ -37,97 +42,68 @@ body {
     margin: 10px;
 }
 
-.nav-bar ul li a{
+.nav-bar ul li a {
     color: #fff;
     text-decoration: none;
     padding: 7.5px 0;
     margin: 0 40px;
 }
 
-.nav-bar ul li a:hover{
+.nav-bar ul li a:hover {
     border-bottom: 2px solid rgb(213, 213, 213);
     cursor: pointer;
     color: rgb(213, 213, 213);
 }
 
-.nav-bar #nav-icon i{
+.nav-bar #nav-icon i {
     margin: 10px;
 }
 
-.main-page{
+.main-page {
     width: 100%;
     height: 100%;
+}
+
+#all-product {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+#all-product ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+#all-product ul li{
+    text-align: center;
+}
+
+#all-product ul li a img{
+    width: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 6% 8%;
+    justify-content: center;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
+#all-product .line-left{
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    width: 2px;
+    height: 100px;
+    border-left: 1px solid rgb(161, 156, 156);
 }
 
-.info h1{
-    font-size: 3.2vw;
-    margin: 8px 0;
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: 1px;
+#all-product .line-right{
+    /* margin-right: 10px; */
+    /* margin-left: 100px; */
+    margin-top: 10px;
+    width: 2px;
+    height: 100px;
+    border-right: 1px solid rgb(161, 156, 156);
 }
 
-.info h4{
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.8);
-    letter-spacing: 1px;
-}
-
-.info p{
-    color: rgba(255, 255, 255, 0.8);
-    width: 70%;
-    letter-spacing: 1px;
-}
-
-button{
-    height: 8vh;
-    width: 15vw;
-    font-weight: 700;
-    margin-top: 40px;
-    border-radius: 3px;
-    outline: none;
-    border: 0.5px solid;
-    transition: .6s;
-    font-size: 1.1vw;
-    letter-spacing: 0.8px;
-    border-color: #fff;
-    background: #fff;
-    cursor: pointer;
-}
-
-.carousel-inner img{
-    margin: auto;
-    width: 25vw;
-    animation: anim 2s linear infinite alternate;
-}
-
-@keyframes anim {
-    0%{
-        transform: translateY(-1px);
-    }
-    100%{
-        transform: translateY(10px);
-    }
-}
-
-#carouselExample{
-    width: 380px;
-}
-
-.carousel-control-prev{
-     top: 50px;
-    /* left: -50px; */
-}
-
-.carousel-control-next{
-    top: 50px;
-}
