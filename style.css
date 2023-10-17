@@ -22,8 +22,8 @@ body {
     height: 50px;
     width: 100%;
     border-bottom: 0.1px solid gray;
-    /* background-color: black; */
-    background: transparent;
+    background-color: black;
+    /* background: transparent; */
     color: #fff;
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@ body {
     justify-content: center;
 }
 
-#all-product ul{
+#all-product ul {
     display: flex;
     list-style: none;
     align-items: center;
@@ -79,35 +79,37 @@ body {
     margin-top: 10px;
 }
 
-#all-product ul li{
+#all-product ul li {
     text-align: center;
 }
 
-#all-product ul a{
+#all-product ul a {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
     color: #000;
 }
 
-#all-product ul a li img{
+#all-product ul a li img {
     width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#all-product ul a:nth-child(4){
-    margin-bottom: 20px;
-}
-#all-product ul a:nth-child(5){
-    margin-bottom: 20px;
-}
-#all-product ul a:nth-child(7){
+#all-product ul a:nth-child(4) {
     margin-bottom: 20px;
 }
 
-#all-product .line-left{
+#all-product ul a:nth-child(5) {
+    margin-bottom: 20px;
+}
+
+#all-product ul a:nth-child(7) {
+    margin-bottom: 20px;
+}
+
+#all-product .line-left {
     /* margin-left: 10px; */
     margin-top: 10px;
     width: 2px;
@@ -115,7 +117,7 @@ body {
     border-left: 1px solid rgb(161, 156, 156);
 }
 
-#all-product .line-right{
+#all-product .line-right {
     /* margin-right: 10px; */
     /* margin-left: 100px; */
     margin-top: 10px;
@@ -124,27 +126,79 @@ body {
     border-right: 1px solid rgb(161, 156, 156);
 }
 
-main #hot-sell{
+main #hot-sell {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid rgb(172, 169, 169);
 }
 
-main #hot-sell .text{
+main #hot-sell .text {
     align-items: center;
     margin-left: 20px;
     gap: 50px;
     display: flex;
 }
 
-main #hot-sell .text a{
+main #hot-sell .text a {
     color: #000;
     font-weight: 600;
     text-decoration: none;
 }
 
-main .left-right{
+main .left-right {
     margin-right: 20px;
     font-size: 30px;
+}
+
+main #main-box{
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+}
+
+main #main-box .item-box{
+    border-right: 1px solid black;
+    background-color: #F5F5F5;
+    /* display: flex; */
+}
+
+main #main-box .item-box .item-info{
+    display: flex;
+    width: 448px;
+}
+
+main #main-box .item-box .item-info .item-update{
+    display: flex;
+    margin: 10px 20px;
+    gap: 210px;
+}
+main #main-box .item-box .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #main-box .item-box img{
+    width: 20vw;
+}
+
+main #main-box .item-box h4{
+    background-image: url(https://img.freepik.com/free-vector/abstract-beautiful-colorful-texture-background_1035-12525.jpg?w=740&t=st=1691994866~exp=1691995466~hmac=e1ab8d40f1b914fd5d18ad7b75cd2bc65fda9ea2867c3a38e684b7de0d0dceb6);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
